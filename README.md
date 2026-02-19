@@ -20,14 +20,13 @@ The system uses **5 agents** orchestrated in a deterministic pipeline:
 
 ```
 Customer Request → Orchestrator
-  ├─① Inventory Agent  (check stock & prices)
-  ├─② Quoting Agent    (generate quote with discounts)
-  ├─③ Sales Agent      (record transactions)
-  └─④ Orchestrator     (compose customer response)
+  ├─1. Inventory Agent  (check stock & prices)
+  ├─2. Quoting Agent    (generate quote with discounts)
+  ├─3. Sales Agent      (record transactions)
+  └─4. Orchestrator     (compose customer response)
        → test_results.csv
-
 After all requests:
-  └─⑤ Business Advisor (strategic analysis)
+  └─5. Business Advisor (strategic analysis)
 ```
 
 ### Tools → Helper Function Mapping
@@ -115,7 +114,10 @@ See [reflection_report.md](project/reflection_report.md) for full analysis.
 
 ## Workflow Diagram
 
-The Mermaid source is in [agent_workflow_diagram.md](project/agent_workflow_diagram.md). Paste it into [mermaid.live](https://mermaid.live) to render, or view the exported image (`Inventory Management.png`).
+The Mermaid source is in [agent_workflow_diagram.md](project/agent_workflow_diagram.md).
+
+![Workflow Diagram](project/Inventory%20Management.png)
+
 
 ---
 
